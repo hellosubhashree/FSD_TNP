@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Cafeteria | Login</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(to bottom,#FFF8E7,#FFE4C4);
+    overflow:hidden;
+}
+
+/* Navigation */
+
+nav{
+    background:brown;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Floating Food Emojis */
+
+.food{
+    position:absolute;
+    font-size:40px;
+    animation:float 4s ease-in-out infinite;
+    opacity:0.8;
+}
+
+.food1{
+    top:120px;
+    left:80px;
+}
+
+.food2{
+    top:180px;
+    right:100px;
+    animation-delay:1s;
+}
+
+.food3{
+    bottom:120px;
+    left:150px;
+    animation-delay:2s;
+}
+
+.food4{
+    bottom:150px;
+    right:150px;
+    animation-delay:3s;
+}
+
+.food5{
+    top:330px;
+    left:40px;
+    animation-delay:1.5s;
+}
+
+.food6{
+    top:300px;
+    right:40px;
+    animation-delay:2.5s;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* Login Container */
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:85vh;
+}
+
+/* Login Box */
+
+.login-box{
+
+    background:white;
+    width:380px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+
+}
+
+.login-box:hover{
+
+    transform:scale(1.02);
+    transition:0.4s;
+
+}
+
+.logo{
+
+    font-size:65px;
+
+}
+
+.login-box h1{
+
+    color:brown;
+    margin:10px;
+
+}
+
+.login-box p{
+
+    color:#666;
+    margin-bottom:20px;
+
+}
+
+/* Input */
+
+input{
+
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:2px solid brown;
+    border-radius:10px;
+    font-size:16px;
+
+}
+
+input:focus{
+
+    border-color:orange;
+    outline:none;
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:brown;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#8B0000;
+
+}
+
+.note{
+
+    margin-top:15px;
+    color:brown;
+    font-size:15px;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:brown;
+    color:white;
+    text-align:center;
+    padding:12px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<!-- Floating Food -->
+
+<div class="food food1">🍔</div>
+<div class="food food2">🍕</div>
+<div class="food food3">🍟</div>
+<div class="food food4">☕</div>
+<div class="food food5">🧁</div>
+<div class="food food6">🍩</div>
+
+<div class="container">
+
+<div class="login-box">
+
+<div class="logo">☕</div>
+
+<h1>Campus Cafeteria</h1>
+
+<p>Login to order your favourite food!</p>
+
+<form>
+
+<input type="text" placeholder="👤 Username" required>
+
+<input type="password" placeholder="🔒 Password" required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p class="note">
+😊 Have a tasty day! 🍔🍕☕
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Campus Cafeteria | Fresh Food • Happy Mood
+
+</footer>
+
+</body>
+</html>

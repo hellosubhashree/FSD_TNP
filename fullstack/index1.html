@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Friend Request</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px lightgray;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: green;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .username {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #addBtn {
+            background: blue;
+        }
+
+        #removeBtn {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="circle"></div>
+
+    <div class="username">
+        Enter User Name
+    </div>
+
+    <div class="buttons">
+        <button id="removeBtn">Remove Friend</button>
+        <button id="addBtn">Add Friend</button>
+    </div>
+
+</div>
+
+<script>
+
+    let addButton = document.getElementById("addBtn");
+    let removeButton = document.getElementById("removeBtn");
+
+    addButton.onclick = function () {
+        addButton.style.backgroundColor = "gray";
+    };
+
+    removeButton.onclick = function () {
+        removeButton.style.backgroundColor = "gray";
+    };
+
+</script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Cafeteria</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#FFF8E7;
+}
+
+/* Header */
+
+header{
+    background:#6F4E37;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:50px;
+}
+
+header p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* Navigation */
+
+nav{
+    background:#8B5A2B;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:25px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+
+.hero{
+    background:linear-gradient(to right,#FFE4B5,#FFD39B);
+    text-align:center;
+    padding:60px;
+}
+
+.hero h2{
+    color:brown;
+    font-size:42px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:#444;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    background:brown;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:8px;
+    margin:15px 10px;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:darkred;
+}
+
+/* Floating Food Emojis */
+
+.food{
+    text-align:center;
+    font-size:45px;
+    margin-top:20px;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* About */
+
+.about{
+    width:85%;
+    margin:35px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px lightgray;
+}
+
+.about h2{
+    text-align:center;
+    color:brown;
+    margin-bottom:15px;
+}
+
+.about p{
+    text-align:center;
+    line-height:1.8;
+    color:#555;
+    font-size:18px;
+}
+
+/* Today's Special */
+
+.special{
+    width:85%;
+    margin:35px auto;
+    background:#FFF3D4;
+    padding:20px;
+    border-left:8px solid orange;
+    border-radius:15px;
+}
+
+.special h2{
+    color:brown;
+}
+
+.special p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Best Sellers */
+
+.best{
+    width:90%;
+    margin:40px auto;
+    text-align:center;
+}
+
+.best h2{
+    color:brown;
+    margin-bottom:25px;
+}
+
+.box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.item{
+    background:white;
+    width:180px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px lightgray;
+    transition:0.3s;
+}
+
+.item:hover{
+    transform:scale(1.05);
+}
+
+.item span{
+    font-size:60px;
+}
+
+.item h3{
+    margin-top:10px;
+    color:brown;
+}
+
+.item p{
+    color:#666;
+}
+
+/* Why Choose Us */
+
+.why{
+    width:85%;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px lightgray;
+}
+
+.why h2{
+    color:brown;
+    text-align:center;
+}
+
+.why ul{
+    margin-top:15px;
+    margin-left:30px;
+    line-height:2;
+    font-size:18px;
+}
+
+/* Opening Hours */
+
+.hours{
+    width:85%;
+    margin:40px auto;
+    background:#FFF3D4;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.hours h2{
+    color:brown;
+}
+
+.hours p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Quote */
+
+.quote{
+    width:85%;
+    margin:35px auto;
+    text-align:center;
+    font-size:24px;
+    color:brown;
+    font-style:italic;
+}
+
+/* Footer */
+
+footer{
+    background:#6F4E37;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>☕ Campus Cafeteria</h1>
+
+<p>Fresh Food • Great Taste • Happy Mood</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>Welcome to Campus Cafeteria</h2>
+
+<p>
+Enjoy delicious meals, refreshing drinks, and tasty snacks with your friends.
+</p>
+
+</section>
+
+<section class="about">
+
+<h2>About Us</h2>
+
+<p>
+Campus Cafeteria is the perfect place for students and teachers to enjoy fresh,
+healthy, and delicious meals. We provide quality food, quick service, and a
+comfortable dining experience at affordable prices.
+</p>
+
+</section>
+
+<section class="special">
+
+<h2>🌟 Today's Special</h2>
+
+<p>
+🍕 Cheese Pizza Combo + 🥤 Cold Drink + 🍟 French Fries = <b>₹199</b>
+</p>
+
+</section>
+
+<section class="best">
+
+<h2>⭐ Best Sellers ⭐</h2>
+
+<div class="box">
+
+</div>
+
+</section>
+
+<section class="why">
+
+<h2>Why Choose Us?</h2>
+
+<ul>
+
+<li>✅ Fresh & Hygienic Food</li>
+
+<li>✅ Affordable Prices</li>
+
+<li>✅ Fast Service</li>
+
+<li>✅ Comfortable Seating</li>
+
+<li>✅ Friendly Staff</li>
+
+<li>✅ Clean Environment</li>
+
+</ul>
+
+</section>
+
+<section class="hours">
+
+<h2>🕒 Opening Hours</h2>
+
+<p>Monday - Friday : 8:00 AM – 8:00 PM</p>
+
+<p>Saturday : 9:00 AM – 6:00 PM</p>
+
+<p>Sunday : Closed</p>
+
+</section>
+
+<div class="quote">
+
+🍴 "Good Food is the Ingredient that Binds Us Together." 🍴
+
+</div>
+
+<footer>
+
+<p>📍 Campus Cafeteria | College Campus</p>
+
+<p>📧 cafeteria@gmail.com | 📞 +91 9876543210</p>
+
+<p>© 2026 Campus Cafeteria. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

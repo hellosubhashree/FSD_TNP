@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Cafeteria - Menu</title>
+
+<style>
+
+body{
+    background-color:beige;
+    font-family:Arial, sans-serif;
+    margin:0;
+}
+
+/* Navigation */
+
+nav{
+    background:brown;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Heading */
+
+h1{
+    text-align:center;
+    color:brown;
+    margin-top:25px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#555;
+    margin-bottom:20px;
+}
+
+/* Menu Cards */
+
+.menu{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    width:220px;
+    border:2px solid brown;
+    border-radius:12px;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 0 10px lightgray;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 15px rgba(0,0,0,0.3);
+}
+
+.card img{
+    width:180px;
+    height:140px;
+    border-radius:10px;
+}
+
+.card h2{
+    color:brown;
+    font-size:22px;
+}
+
+.price{
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+
+button{
+    background:brown;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:darkred;
+}
+
+/* Combo Section */
+
+.combo-title{
+    text-align:center;
+    color:brown;
+    margin-top:40px;
+}
+
+.combo-text{
+    text-align:center;
+    color:#555;
+}
+
+/* Footer */
+
+footer{
+    background:brown;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="login.html">Login</a>
+<a href="menu.html">Menu</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>🍽 Campus Cafeteria Menu</h1>
+<p class="subtitle">Fresh • Tasty • Affordable</p>
+
+<div class="menu">
+
+<div class="card">
+<img src="images/burger.jpg" alt="Burger">
+<h2>Veg Burger</h2>
+<p class="price">₹80</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/cheese pizza.jpg" alt="Pizza">
+<h2>Cheese Pizza</h2>
+<p class="price">₹180</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/coffee.jpg" alt="Coffee">
+<h2>Cold Coffee</h2>
+<p class="price">₹50</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/sandwich.jpg" alt="Sandwich">
+<h2>Grilled Sandwich</h2>
+<p class="price">₹70</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/maggie.jpg" alt="Maggi">
+<h2>Cheese Maggi</h2>
+<p class="price">₹60</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/french fries.jpg" alt="French Fries">
+<h2>French Fries</h2>
+<p class="price">₹90</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/pasta.jpg" alt="Pasta">
+<h2>White Sauce Pasta</h2>
+<p class="price">₹80</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/spaghetti.jpg" alt="Spaghetti">
+<h2>Spaghetti</h2>
+<p class="price">₹100</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/garlic bread.jpg" alt="Garlic Bread">
+<h2>Garlic Bread</h2>
+<p class="price">₹110</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/roll.jpg" alt="Roll">
+<h2>Veg Roll</h2>
+<p class="price">₹70</p>
+<button>Order Now</button>
+</div>
+
+</div>
+
+<!-- Combo Meals -->
+
+<h1 class="combo-title">🥳 Special Combo Meals</h1>
+<p class="combo-text">Enjoy More, Spend Less!</p>
+
+<div class="menu">
+
+<div class="card">
+<img src="images/burger combo.jpg" alt="Burger Combo">
+<h2>Burger Combo</h2>
+<p>Burger + Fries + Coke</p>
+<p class="price">₹199</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/pizza combo.jpg" alt="Pizza Combo">
+<h2>Pizza Combo</h2>
+<p>Cheese Pizza + Cold Drink</p>
+<p class="price">₹249</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/pasta combo.jpg" alt="Pasta Combo">
+<h2>Pasta Combo</h2>
+<p>Pasta + Garlic Bread</p>
+<p class="price">₹229</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/sandwich combo.jpg" alt="Sandwich Combo">
+<h2>Sandwich Combo</h2>
+<p>Sandwich + Coffee</p>
+<p class="price">₹169</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/maggi combo.jpg" alt="Maggi Combo">
+<h2>Maggi Combo</h2>
+<p>Cheese Maggi + Cold Coffee</p>
+<p class="price">₹149</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="images/family combo.jpg" alt="Family Combo">
+<h2>Family Combo</h2>
+<p>2 Pizzas + Garlic Bread + 2 Drinks</p>
+<p class="price">₹599</p>
+<button>Order Now</button>
+</div>
+
+</div>
+
+<footer>
+<p>🍴 Campus Cafeteria | Fresh Food • Great Taste • Happy Mood</p>
+<p>© 2026 Campus Cafeteria. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
